@@ -1,5 +1,4 @@
 import Navbar from "../component/Header";
-
 const Home = () => {
   return (
     <div>

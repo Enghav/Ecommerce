@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    .headerHover{
+    .headHover{
         @apply px-2 border border-transparent duration-150 cursor-pointer hover:border-white flex items-center
     }
 }
