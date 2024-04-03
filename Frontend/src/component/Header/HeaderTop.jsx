@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-key */
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
-import us from "../assets/us.svg";
+import logo from "../../assets/logo.png";
+import us from "../../assets/us.svg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import SearchIcon from "@mui/icons-material/Search";
-import { Items } from "../store";
+import { Items } from "../../store";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Header = () => {
