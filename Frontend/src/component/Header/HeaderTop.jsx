@@ -35,7 +35,7 @@ const Header = () => {
             <LocationOnIcon />
             <div className={`text-sm text-lightFont font-light flex flex-col`}>
               Delivery to {""}
-              <span>....</span>
+              <span className="font-bold">Cambodia</span>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const Header = () => {
                 >
                   {Items.map((items) => (
                     <li
-                      className={`text-sm tracking-wide font-titleFont hover:bg-[#1967D2] hover:text-gray-100 cursor-pointer p-1 duration-300 `}
+                      className={` text-sm tracking-wide font-titleFont hover:bg-[#1967D2] hover:text-gray-100 cursor-pointer p-1 duration-300 `}
                       key={items.id}
                       onClick={() => handleItemClick(items.title)}
                     >
@@ -97,7 +97,7 @@ const Header = () => {
             <ArrowDropDownIcon />
           </span>
         </div>
-        <Link path='/signin' className="border border-transparent duration-150 cursor-pointer hover:border-white px-1">
+        <Link to='/signin' className="border border-transparent duration-150 cursor-pointer hover:border-white px-1">
           <div className="text-xs text-lightText font-light">Hello, Sign in</div>
           <div className="hidden md:inline-flex text-sm font-semibold -mt-1 text-whiteText">Account & lists
             <span><ArrowDropDownIcon/></span>
