@@ -1,0 +1,11 @@
+.Card{
+    height: 350px;
+    width: 250px;
+    background-color: red;
+}
+
+.Text{
+    font-family: Arial,sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
