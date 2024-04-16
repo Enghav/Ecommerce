@@ -9,6 +9,7 @@ import About from './view/About.jsx';
 import Signin from './view/Signin.jsx'
 import Register from './view/Register.jsx'
 import Cart from './view/Cart.jsx'
+import Sign from './view/signPW.jsx'
 // eslint-disable-next-line react/no-deprecated
 ReactDOM.render(
   <BrowserRouter>
@@ -18,11 +19,9 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/signin" element={<Signin/>}/>
       <Route path="/register" element={<Register/>}/>
-      <Route path="/cart "element={<Cart/>}/>
+      <Route path="/cart " element={<Cart/>}/>
+      <Route path="/signin/pw" element={<Sign/>} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
 );
-
-// eslint-disable-next-line no-undef
-reportWebVitals();

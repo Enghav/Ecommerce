@@ -90,7 +90,7 @@ const Headerbutton = () => {
                   onClick={() => setSideBar(false)}
                   className="cursor-pointer absolute top-0 left-[300px] md:left-[360px] h-10 text-xl text-white flex items-center justify-center duration-300"
                 >
-                  <CloseIcon />
+                  <CloseIcon/>
                 </span>
               </motion.div>
             </div>
