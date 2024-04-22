@@ -1,5 +1,14 @@
+import React from "react";
+// import './Frontend/src/PdStyle.css';
+
 const Home = () => {
-    return <h1>Home</h1>;
+    return( 
+      <div>
+    <h1>Homie</h1>
+    <p1>hi</p1>
+    </div>
+
+    )
   };
   
   export default Home;

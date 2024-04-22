@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.BigImage{
+    width: 482px;
+    height: 482px;
+    background-color: grey;
+}
+.ImageBox{
+    width: 650px;
+    height: 650px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SmallImage{
+    width:55px ;
+    height: 55px;
+    border:solid 1px black;
+    margin-right: 5px;
+}
+.smallImagebox{
+    width: auto;
+    height: 60px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+.PdDescrib{
+    min-width: 475px;
+    max-width: 622px;
+    height: auto;
+    border: solid lightblue 1px;
+    word-wrap: break-word;  
+}
+.Price{
+    display: flex;
+    width: auto;
+    height: 28px;
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+.font{
+    font-size: 14px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
