@@ -1,22 +1,16 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Logo } from "../assets/index";
 import { useState } from "react";
 import ArrowRightSharpIcon from "@mui/icons-material/ArrowRightSharp";
 
 const Signin = () => {
   const [email, setEmail] = useState('');
-  const history = useHistory();
-
-  const handleSubmit = () => {
-    // Here, you might perform any necessary validation before redirecting
-    history.push(`/signin/pw/${email}`);
-  };
 
   return (
     <div className="w-full">
       <div className="bg-[#F3F4F6]  pb-10 w-full h-screen">
         <form className="w-[350px] mx-auto flex flex-col items-center">
-          <Link to="/">
+          <Link to="/home">
             <img src={Logo} alt="logo" className="w-[128px]" />
           </Link>
           <div className="border-[1px] border-zinc-300  rounded-md w-[350px]">
@@ -30,7 +24,7 @@ const Signin = () => {
                 className="w-full rounded-md lowercase py-1 border border-zinc-400 px-2 text-base  outline-none focus-within:border-[#e77600] focus-within:shadow-InputShadow duration-100"
                 type="email"
               />
-              <button onClick={handleSubmit} className="w-full bg-yellow-400 hover:bg-yellow-500 my-4 p-1 rounded-lg text-[13px]">
+              <button className="w-full bg-yellow-400 hover:bg-yellow-500 my-4 p-1 rounded-lg text-[13px]">
                 Continue
               </button>
               <div className="flex  flex-col gap-4">
@@ -39,6 +33,7 @@ const Signin = () => {
                   <span className="text-blue-500 hover:text-orange-500 hover:underline cursor-pointer">
                     Conditions of Use
                   </span>
+                  <span>, </span>
                   <span className="text-blue-500 hover:text-orange-500 hover:underline  cursor-pointer ">
                     Privacy Notice
                   </span>

@@ -9,7 +9,7 @@ const SignPW = () => {
     <div className="w-full">
       <div className="bg-[#F3F4F6]  pb-10 w-full h-screen">
         <form className="w-[350px] mx-auto flex flex-col items-center">
-          <Link to="/">
+          <Link to="/home">
             <img src={Logo} alt="logo" className="w-[128px]" />
           </Link>
           <div className="border-[1px] border-zinc-300  rounded-md w-[350px]">

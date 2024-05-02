@@ -30,7 +30,7 @@ export const Items = [
   ];
   export const middleList = [
     {
-      id: 2221,
+      id: 21,
       title: "Get to Know Us",
       listItem: [
         {
@@ -47,7 +47,7 @@ export const Items = [
       ],
     },
     {
-      id: 2222,
+      id: 22,
       title: "Make Money with Us",
       listItem: [
         {
@@ -60,13 +60,13 @@ export const Items = [
             "Advertise Your Products",
             "Sell Product with Us",
             "Host an Amazon Hub",
-            "See More Make Money with Us",
+            " See More Make Money with Us",
           ],
         },
       ],
     },
     {
-      id: 2223,
+      id: 23,
       title: "Amazon Payment Products",
       listItem: [
         {
@@ -81,7 +81,7 @@ export const Items = [
       ],
     },
     {
-      id: 2224,
+      id: 24,
       title: "Let Us Help You",
       listItem: [
         {
@@ -100,164 +100,135 @@ export const Items = [
       ],
     },
   ];
-  export const footerBottomItem = [
+  export const fBItem = [
     {
-      id: 1001,
+      id: 101,
       title: "Amazon Music",
       des: "Stream millions of songs",
     },
     {
-      id: 1002,
-      title: "	Amazon Advertising",
-      des: "Find, attract, and engage customers",
+      id: 102,
+      title: "	Amazon Ads",
+      des: "Reach customers wherever they spend their time",
     },
     {
-      id: 1003,
-      title: "Amazon Drive",
-      des: "Cloud storage from Amazon",
-    },
-    {
-      id: 1004,
+      id: 103,
       title: "6pm",
       des: "Score deals on fashion brands",
     },
     {
-      id: 1005,
+      id: 104,
       title: "AbeBooks",
       des: "Books, art & collectibles",
     },
     {
-      id: 1006,
+      id: 106,
       title: "ACX",
       des: "Audiobook Publishing Made Easy",
     },
     {
-      id: 1007,
+      id: 107,
       title: "Sell on Amazon",
       des: "Start a Selling Account",
     },
     {
-      id: 1008,
+      id: 108,
       title: "Amazon Business",
       des: "Everything For Your Business",
     },
     {
-      id: 1009,
+      id: 109,
       title: "AmazonGlobal",
       des: "Ship Orders Internationally",
     },
     {
-      id: 1010,
+      id: 110,
       title: "Home Services",
       des: "Experienced Pros appiness Guarantee",
     },
     {
-      id: 1011,
-      title: "Amazon Ignite",
-      des: "Sell your original Digital Educational Resources",
-    },
-    {
-      id: 1012,
+      id: 111,
       title: "Amazon Web Services",
       des: "Scalable Cloud Computing Services",
     },
+   
     {
-      id: 1013,
+      id: 112,
       title: "Audible",
       des: "Listen to Books & Original Audio Performances",
     },
     {
-      id: 1014,
-      title: "Book Depository",
-      des: "Books With Free Delivery Worldwide",
-    },
-    {
-      id: 1015,
-      title: "Box Office Mojo",
+      id: 114,
+      title: "Book Office Mojo",
       des: "Find Movie Box Office Data",
     },
     {
-      id: 1016,
-      title: "ComiXology",
-      des: "Thousands of Digital Comics",
-    },
-    {
-      id: 1017,
-      title: "DPReview",
-      des: "Digital Photography",
-    },
-    {
-      id: 1018,
-      title: "Fabric",
-      des: "Sewing, Quilting & Knitting",
-    },
-    {
-      id: 1019,
+      id: 115,
       title: "Goodreads",
       des: "Book reviews & recommendations",
     },
     {
-      id: 1020,
+      id: 116,
       title: "IMDb",
       des: "Movies, TV & Celebrities",
     },
     {
-      id: 1021,
+      id: 117,
       title: "	IMDbPro",
       des: "Get Info Entertainment Professionals Need",
     },
     {
-      id: 1022,
+      id: 118,
       title: "Kindle Direct Publishing",
       des: "Indie Digital & Print Publishing Made Easy",
     },
     {
-      id: 1023,
+      id: 119,
       title: "Prime Video Direct",
       des: "Video Distribution Made Easy",
     },
     {
-      id: 1024,
+      id: 120,
       title: "Shopbop",
       des: "Designer Fashion Brands",
     },
     {
-      id: 1025,
+      id: 121,
       title: "Woot!",
       des: "Deals and Shenanigans",
     },
     {
-      id: 1026,
+      id: 122,
       title: "Zappos",
       des: "Shoes & Clothing",
     },
     {
-      id: 1027,
+      id: 123,
       title: "Ring",
       des: "Smart Home Security Systems",
     },
     {
-      id: 1028,
+      id: 124,
       title: "eero WiFi",
       des: "Stream 4K Video in Every Room",
     },
     {
-      id: 1029,
+      id: 125,
       title: "Blink",
       des: "Smart Security for Every Home",
     },
     {
-      id: 1030,
+      id: 126,
       title: "Neighbors App",
       des: "Real-Time Crime & Safety Alerts",
     },
     {
-      id: 1031,
+      id: 127,
       title: "Amazon Subscription Boxes",
-      des: "Top subscription boxes - right to your doo",
+      des: "Top subscription boxes - right to your door",
     },
     {
-      id: 1032,
+      id: 128,
       title: "PillPack",
       des: "Pharmacy Simplified",
     },
