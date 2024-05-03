@@ -14,7 +14,7 @@ const FooterButton = () => {
             </div>
           ))}
         </div>
-        <div className="w-full grid grid-cols-3 md:grid-cols-5 lgl:grid-cols-7  px-6 ju place-content-center text-gray-400 translate-x-[140px] translate-y-[-10px]">
+        <div className="w-full grid grid-cols-3 md:grid-cols-4 lgl:grid-cols-7  px-6 ju place-content-center text-gray-400 translate-x-[140px] translate-y-[-10px]">
           {fBItem.slice(- 5).map((item) => (
             <div key={item.id} className=" flex flex-col  cursor-pointer py-2">
               <h3 className="font-bold text-gray-300 text-[12px] ">{item.title}</h3>

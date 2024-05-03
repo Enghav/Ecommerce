@@ -28,7 +28,7 @@ export const Items = [
     { id: 16, title: "Video Games" },
     { id: 17, title: "Women's Fashion" },
   ];
-  export const middleList = [
+  export const midList = [
     {
       id: 21,
       title: "Get to Know Us",

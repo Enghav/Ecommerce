@@ -11,4 +11,7 @@
     .scale {
         @apply hover:scale-95 hover:px-2 hover:py-2 hover:rounded-sm;
     }
+    .footerLink {
+        @apply text-sm font-titleFont tracking-wide hover:text-gray-100 cursor-pointer hover:underline duration-150;
+      }
 }
