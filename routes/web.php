@@ -9,3 +9,8 @@ Route::get('/', function () {
 Route::get('/test', function(){
     return 'hello';
 });
+
+
+Route::get('/hello', function(Request $request){
+    return 'hello from route';
+});
