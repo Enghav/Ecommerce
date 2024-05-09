@@ -2,25 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use Dotenv\Exception\ValidationException;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use App\Models\Products;
 
 class ProductController extends Controller
 {
-    public function createpro(Request $request): Response
+    public function createpro(Request $request)
     {
-        $request->validate([
-            'product_name' => 'required|string',
-            'category_id' => 'required|integer|exists:category,id',
-            'price' => 'required|numeric',
-            'image' => 'required|string',
-            'description' => 'required|string'
-        ]);
-
-        $product = Products::create($request->all());
-        return response()->json(['message' => 'Product created successfully'], Response::HTTP_CREATED);    }
-
+        try {
+            $validatedData = $request->validate([
+                'product_name' => 'required|string',
+                'category_id' => 'required|integer|exists:category,id',
+                'price' => 'required|numeric',
+                'image' => 'required|string',
+                'description' => 'required|string'
+            ]);
+    
+            $product = Products::create($validatedData);
+            return response()->json(['message' => 'Product created successfully'], 201);
+        } catch (ValidationException $e) {
+            return response()->json(['error' => 'Category does not exist'], 422);
+        }
+    }
 
     // public function createpro(Request $request){
     //     $product = new Products();
@@ -53,38 +57,19 @@ class ProductController extends Controller
         }
     }
 
-    // public function updatepro(Request $request ,$id): Response{
-    //     $request->validate([
-    //         'product_name' => 'string',
-    //         'category_id' => 'integer|exists:category,id',
-    //         'price' => 'numeric',
-    //         'image' => 'string',
-    //         'description' => 'string'
-    //     ]);
-    //     $pro = Products::findOrFail($id);
-    //     $pro->update($request->all());
-    //     return response()->json($pro, Response::HTTP_OK);
-    // }
-
-    public function updatepro(Request $request, $id){
-        $product = Products::find($id);
-
-        if (!$product) {
-            return response()->json(['error' => 'Product not found'], 404);
-        }
-    
-        $validatedData = $request->validate([
-            'name' => 'string',
-            'category_id' => 'exists:categories,id',
+    public function updatepro(Request $request ,$id){
+        $request->validate([
+            'product_name' => 'string',
+            'category_id' => 'integer|exists:category,id',
             'price' => 'numeric',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif',
-            'description' => 'nullable|string',
+            'image' => 'string',
+            'description' => 'string'
         ]);
-    
-        $product->update($validatedData);
-    
-        return response()->json(['message' => 'Product updated successfully', 'product' => $product]);
+        $pro = Products::findOrFail($id);
+        $pro->update($request->all());
+        return response()->json(['Poduct has been updated' => $pro]);
     }
+
 
     public function removepro($id){
         $pro = Products::find($id);

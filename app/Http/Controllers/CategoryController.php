@@ -21,7 +21,11 @@ class CategoryController extends Controller
     }
 
     public function findcategory($id){
-        $cat = Categories::findOrFail($id);
-        return response()->json(['category' =>$cat]);
+        try{
+            $cat = Categories::findOrFail($id);
+            return response()->json(["Category" => $cat]);
+        }catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e){
+            return response()->json(["error" => "This category does not exits in this system"]);
+        }
     }
 }
